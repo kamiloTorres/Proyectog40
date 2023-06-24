@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header class="text-gray-100 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <img class="h-56 w-8 object-cover sm:h-72 md:h-96 lg:h-8 lg:w-8" src="https://res.cloudinary.com/db8koqsxz/image/upload/v1665973484/computadora_xtjhal.png" alt="">
+                 <span class="ml-3 text-xl">Mensajes</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-20 hover:text-white ">Inicio</a>
+                <a href="categoria.html" class="mr-20 hover:text-white">Categoria</a>
+                <a href="tool.html" class="mr-20 hover:text-white">Herramienta</a>
+                <a href="cliente.html"class="mr-20 hover:text-white">Cliente</a>
+                <a href="reservaciones.html" class="mr-20 hover:text-white">Reservaciones</a>
+                <a href="reportes.html" class="mr-20 hover:text-white">Reportes</a>
+              </nav>
+            </div>
+          </header>
+
+          <section class="text-gray-100 bg-gray-800 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-5xl md:text-6xl">
+                  <span class="block text-gray-200 xl:inline">Mensajes</span></h1>
+                  <br>
+             
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Dejanos tu mensaje; te responderemos lo mas pronto posible</p>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-100">Nombre</label>
+                      <input type="text" id="name" name="nombre" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm text-gray-100">Email</label>
+                      <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-100">Mensaje</label>
+                      <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="p-2 w-full">
+                    <button onclick="" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Enviar</button>
+                  </div>
+                  <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesReservaciones.js"></script>  
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header class="text-gray-100 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <img class="h-56 w-8 object-cover sm:h-72 md:h-96 lg:h-8 lg:w-8" src="https://res.cloudinary.com/db8koqsxz/image/upload/v1665976774/construccion_mc5hjk.png" alt="">
+                 <span class="ml-3 text-xl">Reservas</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-20 hover:text-white">Inicio</a>
+                <a href="categoria.html" class="mr-20 hover:text-white">Categoria</a>
+                <a href="tool.html" class="mr-20 hover:text-white">Herramienta</a>
+                <a href="cliente.html"class="mr-20 hover:text-white">Cliente</a>
+                <a href="mensajes.html" class="mr-20 hover:text-white">Mensajes</a>
+                <a href="reportes.html" class="mr-20 hover:text-white">Reportes</a>
+              </nav>
+            </div>
+          </header>
+        
+         <section class="text-gray-100 bg-gray-800 body-font">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                      <span class="block text-gray-100 xl:inline">Reservas</span>
+                    </h1>
+                 Completa este formulario para realizar una reserva.
+                </div>
+  
+  
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                  <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                      <div class="relative">
+                        <label for="name" class="leading-7 text-sm text-gray-100">Fecha De Entrega</label>
+                        <input type="date" id="startDate" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                      <div class="relative">
+                        <label for="email" class="leading-7 text-sm text-gray-100">Fecha De Devolucion</label>
+                        <input type="date" id="startDate" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                    </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="relative">
+                      <label>Escoja El Cliente</label>
+                      <select  id="select-client" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                       </select>
+                    </div>
+
+                      <br>
+        
+                      
+                      <div class="relative">
+                        <label>Escoja La Herramineta</label>
+                        <select id="select-tool" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                       </select>
+                     </div>
+
+                        <br>
+           
+                        <div class="relative">
+                          <label>Escoja el Estatus de la reserva</label>
+                        <select id="status" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <option value="completed">completada</option>
+                        <option value="cancelled">cancelada</option>
+                      </select>
+                      
+                      <br>
+                    
+                      </div>
+                    </div>
+                    <script type="text/javascript">
+                      window.onload = getTool_Reservaciones();
+                  </script>
+                  
+                  <script type="text/javascript">
+                      window.onload = getClient_Reservaciones();
+                  </script><br>
+          
+                  <script type="text/javascript">
+                      window.onload = getReservaciones();
+                  </script>
+  
+                     <div class="p-2 w-full">
+                      <button onclick="postReservaciones()" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Crear Reservacion</button>
+                      <br>
+
+                      <div id="resultado4"></div>
+                    </div>
+             </section>
+            
+    </body>
+</html>
